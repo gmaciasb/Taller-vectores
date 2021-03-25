@@ -108,3 +108,22 @@ for i in range(1, cantidad+1):
 
 print(f'Los elementos que conforman el vector son: {lista}')
 print(f'La cantidad de elementos impares son: {impares}')
+
+# Punto 2:
+# C (Elementos primos)
+
+num = int(input('Digite un elementos para el vector: '))
+lista = []
+contador = 0
+primos = 0
+if num > 1:
+    for i in range(2, num):
+        restantes = (num % i)
+#        print("{} {} {}".format(num, i, restantes))
+        if restantes == 0:
+            contador = contador + 1
+    if contador == 0:
+        primos = primos + 1
+
+# print(f'Los elementos que conforman el vector son: {lista}')
+print(f'La cantidad de elementos primos son: {primos}')
