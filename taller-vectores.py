@@ -93,3 +93,18 @@ for i in range(1, cantidad+1):
 
 print(f'Los elementos que conforman el vector son: {lista}')
 print(f'La cantidad de elementos pares son: {pares}')
+
+# Punto 2:
+# B (Elementos impares)
+
+cantidad = int(input('Digite el total de elementos que conforman el vector: '))
+lista = []
+impares = 0
+for i in range(1, cantidad+1):
+    elementos = int(input(f'Digite el elemento #{i}: '))
+    if elementos % 2 != 0:
+        impares = impares + 1
+    lista.append(elementos)
+
+print(f'Los elementos que conforman el vector son: {lista}')
+print(f'La cantidad de elementos impares son: {impares}')
