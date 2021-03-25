@@ -77,3 +77,19 @@ producto = np.prod(contenedor)
 
 print(f'Los elementos del vector son: {contenedor}')
 print(f'La productoria de los elementos es: {producto}')
+
+
+# Punto 2:
+# A (Elementos pares)
+
+cantidad = int(input('Digite el total de elementos que conforman el vector: '))
+lista = []
+pares = 0
+for i in range(1, cantidad+1):
+    elementos = int(input(f'Digite el elemento #{i}: '))
+    if elementos % 2 == 0:
+        pares = pares + 1
+    lista.append(elementos)
+
+print(f'Los elementos que conforman el vector son: {lista}')
+print(f'La cantidad de elementos pares son: {pares}')
