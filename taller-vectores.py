@@ -112,18 +112,22 @@ print(f'La cantidad de elementos impares son: {impares}')
 # Punto 2:
 # C (Elementos primos)
 
-num = int(input('Digite un elementos para el vector: '))
 lista = []
-contador = 0
 primos = 0
-if num > 1:
-    for i in range(2, num):
-        restantes = (num % i)
-#        print("{} {} {}".format(num, i, restantes))
-        if restantes == 0:
-            contador = contador + 1
-    if contador == 0:
-        primos = primos + 1
+contador = 0
+nvect = int(input('Digite el tamaño del vector: '))
+for i in range(1, nvect+1):
+    numpri = int(input('Digite el numero a validar: '))
+    lista.append(numpri)
+    if numpri > 1:
+        for j in range(2, numpri):
+            restantes = (numpri % j)
+            if restantes == 0:
+                contador = contador + 1
+        if contador == 0:
+            primos = primos + 1
+print(f'El vetor validado fue: {lista}')
+print(f'La cantidad de elementos primos es: {primos}')
 
-# print(f'Los elementos que conforman el vector son: {lista}')
-print(f'La cantidad de elementos primos son: {primos}')
+# Punto 3:
+# A (Suma de vectores)
