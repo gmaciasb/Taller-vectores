@@ -131,3 +131,26 @@ print(f'La cantidad de elementos primos es: {primos}')
 
 # Punto 3:
 # A (Suma de vectores)
+
+lista1 = []
+lista2 = []
+
+vect1 = int(input('Digite el tamaño para el vector 1: '))
+vect2 = int(input('Digite el tamaño para el vector 2: '))
+
+for i in range(1, vect1 + 1):
+    n_vect1 = int(input(f'Digite los elementos # {i} para el vector 1: '))
+    lista1.append(n_vect1)
+    result1 = sum(lista1)
+
+for i in range(1, vect2 + 1):
+    n_vect2 = int(input(f'Digite los elementos # {i} para el vector 2: '))
+    lista2.append(n_vect2)
+    result2 = sum(lista2)
+rtotal = result1 + result2
+print(f'La suma del vector 1 {lista1} es: {result1}')
+print(f'La suma del vector 2 {lista2} es: {result2}')
+print(f'La suma de los dos vectores es: {rtotal}')
+
+# Punto 3:
+# B (Resta de vectores)
