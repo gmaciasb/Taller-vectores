@@ -190,3 +190,23 @@ while (cant_num > 0):
 print(f'Los elementos que contiene el vector son: {lista}')
 print(f'El elemento que mas se repirte es: {moda}')
 
+# Punto 5:
+
+import numpy as np
+listap = []
+
+tvector = int(input('Ingrese la cantidad de elementos que tendra la lista: '))
+for i in range(1, tvector + 1):
+    elementos = int(input('Digite el elemento # {} en la lista: '.format(i)))
+    listap.append(elementos)
+    i = i + 1
+print('Los elementos contenidos en el vector son: {}'.format(listap))
+n_element = int(len(listap)/2)
+vectora = listap[:n_element]
+vectorb = listap[n_element:]
+sumatoria = sum(vectora)
+productoria = np.prod(vectorb)
+print('Los elementos en el vector resultante A son: {}'.format(vectora))
+print('Los elementos en el vector resultante B son: {}'.format(vectorb))
+print('El resultado de la sumatoria en el vector resultante A es: {}'.format(sumatoria))
+print('El resultado de la productoria en el vector resultante B es: {}'.format(productoria))
