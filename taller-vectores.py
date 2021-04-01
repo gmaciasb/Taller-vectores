@@ -243,3 +243,104 @@ else:
         print('El vector tipo Y {} es simetrico'.format(lista))
     else:
         print('El vector {} no es asimetrico'.format(lista))
+
+# Punto 7
+# Union
+
+lista1 = []
+lista2 = []
+
+vect1 = int(input('Digite el tamaño para el vector 1: '))
+vect2 = int(input('Digite el tamaño para el vector 2: '))
+
+for i in range(1, vect1 + 1):
+    n_vect1 = int(input(f'Digite los elementos # {i} para el vector 1: '))
+    lista1.append(n_vect1)
+    result1 = sum(lista1)
+
+for i in range(1, vect2 + 1):
+    n_vect2 = int(input(f'Digite los elementos # {i} para el vector 2: '))
+    lista2.append(n_vect2)
+    result2 = sum(lista2)
+
+La = set(lista1)
+Lb = set(lista2)
+
+union = La.union(Lb)
+
+print('La union del conjunto A {} y B {} es: {}'.format(lista1, lista2, union))
+
+
+# Intersección
+
+lista1 = []
+lista2 = []
+
+vect1 = int(input('Digite el tamaño para el vector 1: '))
+vect2 = int(input('Digite el tamaño para el vector 2: '))
+
+for i in range(1, vect1 + 1):
+    n_vect1 = int(input(f'Digite los elementos # {i} para el vector 1: '))
+    lista1.append(n_vect1)
+    result1 = sum(lista1)
+
+for i in range(1, vect2 + 1):
+    n_vect2 = int(input(f'Digite los elementos # {i} para el vector 2: '))
+    lista2.append(n_vect2)
+    result2 = sum(lista2)
+
+La = set(lista1)
+Lb = set(lista2)
+
+interseccion = La.intersection(Lb)
+print('La intersección del conjunto A {} y B {} es: {}'.format(lista1, lista2, interseccion))
+
+
+# Diferencia (A-B)
+
+lista1 = []
+lista2 = []
+
+vect1 = int(input('Digite el tamaño para el vector 1: '))
+vect2 = int(input('Digite el tamaño para el vector 2: '))
+
+for i in range(1, vect1 + 1):
+    n_vect1 = int(input(f'Digite los elementos # {i} para el vector 1: '))
+    lista1.append(n_vect1)
+    result1 = sum(lista1)
+
+for i in range(1, vect2 + 1):
+    n_vect2 = int(input(f'Digite los elementos # {i} para el vector 2: '))
+    lista2.append(n_vect2)
+    result2 = sum(lista2)
+
+La = set(lista1)
+Lb = set(lista2)
+
+diferencia = La.difference(Lb)
+print('La diferencia del conjunto A {} - B {} es: {}'.format(lista1, lista2, diferencia))
+
+
+# Diferencia (B-A)
+
+lista1 = []
+lista2 = []
+
+vect1 = int(input('Digite el tamaño para el vector 1: '))
+vect2 = int(input('Digite el tamaño para el vector 2: '))
+
+for i in range(1, vect1 + 1):
+    n_vect1 = int(input(f'Digite los elementos # {i} para el vector 1: '))
+    lista1.append(n_vect1)
+    result1 = sum(lista1)
+
+for i in range(1, vect2 + 1):
+    n_vect2 = int(input(f'Digite los elementos # {i} para el vector 2: '))
+    lista2.append(n_vect2)
+    result2 = sum(lista2)
+
+La = set(lista1)
+Lb = set(lista2)
+
+diferencia = Lb.difference(La)
+print('La diferencia del conjunto B {} - A {} es: {}'.format(lista2, lista1, diferencia))
