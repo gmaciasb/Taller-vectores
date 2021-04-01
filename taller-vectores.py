@@ -210,3 +210,36 @@ print('Los elementos en el vector resultante A son: {}'.format(vectora))
 print('Los elementos en el vector resultante B son: {}'.format(vectorb))
 print('El resultado de la sumatoria en el vector resultante A es: {}'.format(sumatoria))
 print('El resultado de la productoria en el vector resultante B es: {}'.format(productoria))
+
+# Punto 6:
+
+lista = []
+
+tvector = int(input('Ingrese la cantidad de elementos que tendra la lista: '))
+if (tvector % 2 == 0):
+    for i in range(1, tvector + 1):
+        elementos = int(input('Digite el elemento # {} en la lista: '.format(i)))
+        lista.append(elementos)
+        i = i + 1
+        n_element = int(len(lista)/2)
+        vectora = lista[:n_element]
+        vectorb = lista[n_element:]
+    if (vectora == vectorb[::-1]):
+        print('El vector {} es asimetrico'.format(lista))
+    else:
+        print('El vector {} no es asimetrico'.format(lista))
+elif(tvector <= 1):
+    print('El numero a digitar debe ser mayor a 1')
+else:
+    for i in range(1, tvector + 1):
+        elementos = int(input('Digite el elemento # {} en la lista: '.format(i)))
+        lista.append(elementos)
+    print('Los elementos contenidos en el vector son: {}'.format(lista))
+    n_element = int(len(lista)/2)
+    lista.pop(n_element)
+    vectora = lista[:n_element]
+    vectorb = lista[n_element:]
+    if(vectora == vectorb[::-1]):
+        print('El vector tipo Y {} es simetrico'.format(lista))
+    else:
+        print('El vector {} no es asimetrico'.format(lista))
