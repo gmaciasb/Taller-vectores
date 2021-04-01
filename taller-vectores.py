@@ -174,3 +174,19 @@ rtotal = result1 - result2
 print(f'La suma del vector 1 {lista1} es: {result1}')
 print(f'La suma del vector 2 {lista2} es: {result2}')
 print(f'La resta de los dos vectores es: {rtotal}')
+
+# Punto 4:
+
+from scipy import stats as st
+cant_num = int(input('Digite la cantidad de elementos que tendra el vector: '))
+lista = []
+i = 1
+while (cant_num > 0):
+    numeros = int(input(f'Digite el elemento {i} para el vector: '))
+    lista.append(numeros)
+    i = i + 1
+    cant_num = cant_num - 1
+    moda = st.mode(lista)
+print(f'Los elementos que contiene el vector son: {lista}')
+print(f'El elemento que mas se repirte es: {moda}')
+
